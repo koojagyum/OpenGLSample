@@ -28,7 +28,7 @@ $(TARGET): $(OBJS) $(BINDIR)
 	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 $(BINDIR):
-	mkdir $(BINDIR)
+	$(MKDIR) $(BINDIR)
 
 clean:
 	$(RM) $(OBJS) $(TARGET) $(TARGET).* core

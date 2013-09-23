@@ -7,6 +7,7 @@ BINDIR=$(BINDIR_NAME)
 export MAKE=mingw32-make.exe
 export CP=copy
 export RM=del /q
+export MKDIR=mkdir
 export RMDIR=rmdir /s /q
 export MOVE=move
 
