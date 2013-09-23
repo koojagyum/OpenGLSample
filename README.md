@@ -1,0 +1,1 @@
+OpenGL sample for start up, running with MinGW32.
