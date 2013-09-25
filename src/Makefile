@@ -1,6 +1,7 @@
-TOPDIR=..
-BINDIR=$(TOPDIR)\$(BINDIR_NAME)
-FREEGLUT_PATH=$(TOPDIR)\prebuilt\freeglut
+DEPTH=..
+include $(DEPTH)\Makefile.common
+
+FREEGLUT_PATH=$(DEPTH)\prebuilt\freeglut
 
 INCLUDE=$(FREEGLUT_PATH)\include
 

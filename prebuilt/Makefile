@@ -1,5 +1,5 @@
-TOPDIR=..
-BINDIR=$(TOPDIR)\$(BINDIR_NAME)
+DEPTH=..
+include $(DEPTH)\Makefile.common
 
 FREEGLUT_LIB_PATH=freeglut\bin\freeglut.dll
 
