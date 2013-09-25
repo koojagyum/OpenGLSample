@@ -31,4 +31,5 @@ $(BINDIR):
 	$(MKDIR) $(BINDIR)
 
 clean:
-	$(RM) $(OBJS) $(TARGET) $(TARGET).* core
+	@for %%f in ($(OBJS) $(TARGET) $(TARGET).* core) do \
+	if exist %%f $(RM) %%f

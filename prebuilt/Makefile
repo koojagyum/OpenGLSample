@@ -12,4 +12,5 @@ $(BINDIR):
 	$(MKDIR) $(BINDIR)
 
 clean:
-	$(RM) $(TARGET)
+	@for %%f in ($(TARGET)) do \
+	if exist %%f $(RM) %%f

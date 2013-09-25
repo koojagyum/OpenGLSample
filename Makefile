@@ -18,4 +18,4 @@ all:
 clean:
 	@for %%d in ($(DIRS)) do \
 	$(MAKE) -C %%d clean
-	$(RMDIR) $(BINDIR)
+	@if exist $(BINDIR) $(RMDIR) $(BINDIR)
