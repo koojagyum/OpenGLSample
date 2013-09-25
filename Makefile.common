@@ -1,10 +1,10 @@
-export BINDIR_NAME:=bin
+BINDIR_NAME:=bin
 
-export MAKE=mingw32-make.exe
-export CP=copy
-export RM=del /q
-export MKDIR=mkdir
-export RMDIR=rmdir /s /q
-export MOVE=move
+MAKE=mingw32-make.exe
+CP=copy
+RM=del /q
+MKDIR=mkdir
+RMDIR=rmdir /s /q
+MOVE=move
 
 BINDIR=$(DEPTH)\$(BINDIR_NAME)
