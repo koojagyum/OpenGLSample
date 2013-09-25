@@ -1,0 +1,4 @@
+# no output directory
+bin
+# all object files ignored
+*.o
