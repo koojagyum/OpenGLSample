@@ -6,7 +6,7 @@ FREEGLUT_LIB_PATH=freeglut\bin\freeglut.dll
 TARGET=$(BINDIR)\freeglut.dll
 
 $(TARGET): $(BINDIR) $(FREEGLUT_LIB_PATH)
-	$(CP) $(FREEGLUT_LIB_PATH) $(TARGET)
+	$(CP) $(FREEGLUT_LIB_PATH) $@
 
 $(BINDIR):
 	$(MKDIR) $(BINDIR)

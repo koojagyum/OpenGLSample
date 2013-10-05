@@ -17,10 +17,10 @@ SRCS=\
 
 OBJS=$(SRCS:.cpp=.o)
 
-TARGET=test
+TARGET=$(BINDIR)\test.exe
 
 $(TARGET): $(OBJS) $(BINDIR)
-	$(CXX) -o $(BINDIR)\$@ $(OBJS) $(LIBS)
+	$(CXX) -o $@ $(OBJS) $(LIBS)
 
 .cpp.o:
 	$(CXX) -c $(CXXFLAGS) $< -o $@
